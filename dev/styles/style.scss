@@ -5,6 +5,8 @@
 $regular: 'Press Start 2P', cursive;
 
 $brown: #8d6346;
+$green: #00ca00;
+// $green: #71F400;
 
 
 html {
@@ -19,9 +21,10 @@ body {
 	// background-color: #635c51;
 	// background-color: #7D7461;
 	// background-color: #b0A990;
-	background-color: black;
+	background-color: #3a373b;
 	border: 20px solid $brown;
 	color: white;
+	height: 100vh;
 }
 
 h1, h2 {
@@ -115,9 +118,14 @@ form {
 	
 	.submit {
 		margin-bottom: 50px;
-		background-color: #650033;
-		color: #fff972;
-		padding: 10px 20px;
+		// background-color: #650033;
+		// background-color: #71F400;
+		// color: #fff972;
+		background: transparent;
+		border: 2px solid $green;
+		border-radius: 20px;
+		color: white;
+		padding: 20px 40px;
 	}
 	
 
@@ -125,7 +133,7 @@ form {
 		display: flex;
 		flex-direction: row;
 		// flex-wrap: wrap;
-		justify-content: space-between;
+		// justify-content: space-between;
 		// width: 100%;
 		margin-top: 20px;
 
@@ -134,14 +142,20 @@ form {
 		}
 	}
 
+	.fieldsetDiv {
+		width: 30%;
+	}
+
 	fieldset {
-		border-left: none;
-		border-right: none;
+		// border-left: none;
+		// border-right: none;
 		margin: 0;
-		background-color: darkgray;
-		border-top: 3px dotted #000;
-		border-bottom: 3px dotted #000;
-		box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+		background-color: rgba(0,0,0,0.3);
+		border: 3px solid $green;
+		border-radius: 30px;
+		// border-top: 3px dotted #000;
+		// border-bottom: 3px dotted #000;
+		// box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
 		margin-bottom: 20px;
 	}
 
@@ -257,7 +271,7 @@ form {
 
 .credits {
 	display: flex;
-	width: 60%;
+	// width: 60%;
 	justify-content: space-between;	
 	align-items: center;	
 
@@ -270,13 +284,14 @@ form {
 	}
 
 	p {
-		font-size: 1.2rem;
+		font-size: 0.2rem;
+		line-height: 200%;
 
 		a {
 			text-decoration: underline;
-			color: #4c0941;
+			color: $green;
 			&:hover {
-				color: #fc8943;
+				color: white;
 			}
 		}
 	}
