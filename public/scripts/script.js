@@ -1,3 +1,4 @@
+console.log("I work!")
 "use strict";
 
 // Twitter share button
