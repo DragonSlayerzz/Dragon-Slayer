@@ -1,0 +1,60 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	// background-image: url("../images/bg_old_map.png");
+	// background-repeat: repeat;
+	// background-color: #39304a;
+	// background-color: #202030;
+	// background-color: #635c51;
+	// background-color: #7D7461;
+	// background-color: #b0A990;
+	background-color: #3a373b;
+	border: 20px solid $brown;
+	color: white;
+	height: 100vh;
+}
+
+h1, h2 {
+	font-family: $regular;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-size: 1.5rem;
+
+}
+
+h3 {
+	font-family: $regular;
+	font-size: 1.2rem;
+	margin-top: 30px;
+}
+
+p {
+	font-family: $regular;
+	font-size: 1.4rem;
+}
+
+input {
+	width: 100%;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1000px;
+
+	@include respond-to(medium) {
+		max-width: 700px;
+	}
+}
+
+img {
+	max-width: 100%;
+}
